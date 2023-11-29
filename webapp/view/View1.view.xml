@@ -1,0 +1,40 @@
+<mvc:View controllerName="com.probosys.North.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:u="sap.ui.unified"
+	xmlns:c="sap.ui.core" xmlns="sap.m">
+	<App>
+		<Page title="Table Events">
+			<Table id="idProductsTable" inset="false" items="{ path: 'DashboardPlantModel>/results'}" growing="true" growingThreshold="20"
+				growingScrollToLoad="true" growingStarted="grow" >
+				<columns>
+					<Column width="12em">
+						<Text text="OrderId"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem vAlign="Middle">
+						<cells>
+							<Text text="{DashboardPlantModel>OrderID}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</Page>
+		</App>
+			<!--<Table id="idProductsTable" inset="false" items="{ path: 'DashboardPlantModel>/results'}" growing="false" growingThreshold="2"
+		growingStarted="onHitSRV">
+		<columns>
+			<Column width="12em">
+				<Text text="OrderId"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					<Text text="{DashboardPlantModel>OrderID}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>-->
+			<!--<List  items="{ path: 'DashboardPlantModel>/results'}">
+		<StandardListItem title="{DashboardPlantModel>OrderID}"/>
+	</List>-->
+		</mvc:View>
