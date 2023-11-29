@@ -88,6 +88,10 @@ sap.ui.define([
 				}
 			});
 
+		},
+		//Apply new changes
+		onApplyNew: function () {
+			alert("Dev Testing done for Debug 1234");
 		}
 
 	});
